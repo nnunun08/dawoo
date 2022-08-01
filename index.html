@@ -1,149 +1,728 @@
 <!DOCTYPE html>
 <html lang="ko" style="overflow-x: hidden;">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--     <meta name="viewport" content="width=720, initial-scale=1.0"> -->
-    <title>다우서 홈페이지에 오신 것을 환영합니다! Welcome To Dauseo Website</title>
-    <link rel="stylesheet" href="./css/slide.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/media.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
-    <script>
-      (function(d) {
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=720, initial-scale=1.0"> -->
+  <title>다우서 홈페이지에 오신 것을 환영합니다! Welcome To Dauseo Website</title>
+  <link rel="stylesheet" href="./css/slide.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script charset="UTF-8" class="daum_roughmap_loader_script"
+    src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+  <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+  <script>
+    (function (d) {
       var config = {
-      kitId: 'all3mmj',
-      scriptTimeout: 3000,
-      async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-      })(document);
-    </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          kitId: 'all3mmj',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
+
 <body>
-    <!-- section 1 -->
-    <header class="width-100p navbar">
-			<div class="flexBox just-betw aling-c" id="navBar">
-				<div class="inner">
-          <h1 id="logo">
-            <a href="/">
-                                  <svg id="Layer1" class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.51 56.69"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:9.43px;}.cls-2{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="레이어_1" data-name="레이어 1"><path class="cls-1" d="M35.88,20.05A28.06,28.06,0,0,1,7.71,48"/><path class="cls-2" d="M20,22.15a10,10,0,1,1-10-10A10,10,0,0,1,20,22.15Z"/><path class="cls-2" d="M41.77,5.41A5.42,5.42,0,1,1,36.35,0,5.42,5.42,0,0,1,41.77,5.41Z"/><path class="cls-2" d="M50.86,26.26c0-6.5,4.77-10.22,9.73-10.22a8.1,8.1,0,0,1,6.27,2.71V11.24h4.56V36.06H66.89V33.51a8,8,0,0,1-6.37,3A9.81,9.81,0,0,1,50.86,26.26Zm16.27-.06a5.85,5.85,0,0,0-5.87-6,5.91,5.91,0,0,0-5.94,6,5.91,5.91,0,1,0,11.81,0Z"/><path class="cls-2" d="M73.36,26.26c0-6.5,4.77-10.22,9.73-10.22a8.16,8.16,0,0,1,6.31,2.75V16.44h4.52V36.06H89.4V33.51a8.06,8.06,0,0,1-6.38,3A9.81,9.81,0,0,1,73.36,26.26Zm16.27-.06a5.85,5.85,0,0,0-5.87-6,5.91,5.91,0,0,0-5.94,6,5.91,5.91,0,1,0,11.81,0Z"/><path class="cls-2" d="M114.18,36.06h-4.5V33.81a6.74,6.74,0,0,1-5.63,2.65c-4.7,0-7.55-3.05-7.55-8.39V16.44h4.6V27.61c0,3.05,1.34,4.93,4.19,4.93,2.51,0,4.36-1.88,4.36-5.34V16.44h4.53Z"/><path class="cls-2" d="M115.45,31.7l4.19-2a5,5,0,0,0,4.73,2.86c2.25,0,3.36-1.08,3.36-2.39s-2.19-1.71-4.6-2.24c-3.35-.71-6.88-1.78-6.88-5.91,0-3.15,3.06-6,7.72-6,4,0,6.5,1.54,8,4.06L128.13,22A4.66,4.66,0,0,0,124,19.76c-2.15,0-3.15,1-3.15,2.11,0,1.31,1.54,1.64,4.49,2.28,3.22.64,6.91,1.78,6.91,5.9,0,2.75-2.45,6.41-8,6.41C119.78,36.46,117,34.78,115.45,31.7Z"/><path class="cls-2" d="M133.53,26.3A10.11,10.11,0,0,1,143.72,16a9.8,9.8,0,0,1,10.1,10.09v1.71h-16a5.82,5.82,0,0,0,6,4.63A5.7,5.7,0,0,0,149.32,29L153,31.16a9.8,9.8,0,0,1-9.15,5.3A10,10,0,0,1,133.53,26.3Zm4.56-2.25h11.13c-.67-2.65-2.68-4-5.5-4A5.76,5.76,0,0,0,138.09,24.05Z"/><path class="cls-2" d="M155.19,26.26a10.16,10.16,0,1,1,10.16,10.2A10.1,10.1,0,0,1,155.19,26.26Zm15.86,0a5.71,5.71,0,1,0-11.4,0,5.7,5.7,0,1,0,11.4,0Z"/><path class="cls-2" d="M50.86,44.3H52.2v1.28A3.29,3.29,0,0,1,55,44.12c2.19,0,3.55,1.43,3.55,3.78v4.73H57.21V48c0-1.61-.8-2.62-2.44-2.62A2.54,2.54,0,0,0,52.22,48v4.61H50.86Z"/><path class="cls-2" d="M60,48.47a4.23,4.23,0,0,1,4.25-4.35,3.77,3.77,0,0,1,3.06,1.56V44.3h1.34v8.33H67.28V51.22a3.28,3.28,0,0,1-1.35,1.17,3.91,3.91,0,0,1-1.71.41A4.24,4.24,0,0,1,60,48.47Zm7.41,0a3,3,0,1,0-3,3.09A3,3,0,0,0,67.38,48.46Z"/><path class="cls-2" d="M70.46,44.3H71.8v1.16a3,3,0,0,1,2.66-1.34,3,3,0,0,1,3,1.7A3.58,3.58,0,0,1,84,47.72v4.91H82.67V47.7a2.22,2.22,0,0,0-2.36-2.38,2.33,2.33,0,0,0-2.4,2.51v4.8H76.54V47.57a2.1,2.1,0,0,0-2.28-2.25,2.39,2.39,0,0,0-2.45,2.62v4.69H70.46Z"/><path class="cls-2" d="M85.45,48.51a4.29,4.29,0,0,1,4.34-4.39,4.11,4.11,0,0,1,4.27,4.24v.57H86.78a3.09,3.09,0,0,0,5.86.89l1.15.62a4.1,4.1,0,0,1-3.93,2.36A4.17,4.17,0,0,1,85.45,48.51Zm1.4-.79h5.83a2.69,2.69,0,0,0-2.89-2.38A3,3,0,0,0,86.85,47.72Z"/><path class="cls-2" d="M100.34,48.47a4.29,4.29,0,0,1,4.38-4.35,4.14,4.14,0,0,1,3.9,2.54l-1.21.52a2.85,2.85,0,0,0-2.71-1.8,3.09,3.09,0,0,0,0,6.17,2.87,2.87,0,0,0,2.7-1.9l1.24.55a4.16,4.16,0,0,1-4,2.6A4.29,4.29,0,0,1,100.34,48.47Z"/><path class="cls-2" d="M109.66,48.47A4.33,4.33,0,1,1,114,52.8,4.3,4.3,0,0,1,109.66,48.47Zm7.3,0a3,3,0,1,0-3,3.08A3,3,0,0,0,117,48.47Z"/><path class="cls-2" d="M119.77,44.3h1.34v1.28a3.28,3.28,0,0,1,2.82-1.46c2.18,0,3.55,1.43,3.55,3.78v4.73h-1.37V48c0-1.61-.8-2.62-2.44-2.62A2.54,2.54,0,0,0,121.12,48v4.61h-1.35Z"/><path class="cls-2" d="M128.55,51.08l1.15-.76a2.82,2.82,0,0,0,2.39,1.29c1.24,0,1.86-.65,1.86-1.39s-1.09-1-2.21-1.28c-1.37-.34-2.81-.77-2.81-2.4,0-1.27,1.18-2.43,3.06-2.43a3.92,3.92,0,0,1,3.18,1.38l-1.07.74a2.6,2.6,0,0,0-2.11-1c-1.12,0-1.71.55-1.71,1.24s1,1,2.16,1.28c1.34.34,2.85.72,2.85,2.42,0,1.1-1,2.59-3.24,2.59A4,4,0,0,1,128.55,51.08Z"/><path class="cls-2" d="M136.63,49V44.3H138V49c0,1.61.69,2.62,2.29,2.62,1.42,0,2.26-1.09,2.26-2.66V44.3h1.35v8.33h-1.32V51.46a2.78,2.78,0,0,1-2.52,1.34C137.84,52.8,136.63,51.42,136.63,49Z"/><path class="cls-2" d="M145.66,42.09H147V52.63h-1.37Z"/><path class="cls-2" d="M148.28,44.3h1.46V42.71l1.34-.92V44.3H153v1.22h-1.95V49.4c0,1.66.3,2,1.95,2v1.28h-.2c-2.44,0-3.09-.71-3.09-3.22V45.52h-1.46Z"/><path class="cls-2" d="M155.15,41.3a1,1,0,1,1-1,1A.92.92,0,0,1,155.15,41.3Zm-.68,3h1.37v8.33h-1.37Z"/><path class="cls-2" d="M157.59,44.3h1.34v1.28a3.29,3.29,0,0,1,2.82-1.46c2.18,0,3.55,1.43,3.55,3.78v4.73h-1.37V48c0-1.61-.8-2.62-2.43-2.62A2.55,2.55,0,0,0,158.94,48v4.61h-1.35Z"/><path class="cls-2" d="M166.7,48.47a4.23,4.23,0,0,1,4.24-4.35A3.72,3.72,0,0,1,174,45.71V44.3h1.35v8.18a4,4,0,0,1-4.27,4.21A4.25,4.25,0,0,1,167,54.48l1.2-.71a3,3,0,0,0,2.86,1.7A2.75,2.75,0,0,0,174,52.52v-1.3a3.3,3.3,0,0,1-1.36,1.17,3.84,3.84,0,0,1-1.71.41A4.23,4.23,0,0,1,166.7,48.47Zm7.41,0a3,3,0,1,0-3,3.09A3,3,0,0,0,174.11,48.46Z"/></g></g></svg>
-                              </a>
-          </h1>
-                  <button class="hamberger" onclick="openTopNav()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </button>
-          <nav id="myTopnav" class="">
-            <ul class="flexBox">
-              <li><a href="#section2" onclick="closeTopNav()">경영철학</a></li>
-              <li><a href="#section3" onclick="closeTopNav()">회사비전</a></li>
-              <li><a href="#contents" onclick="closeTopNav()">사업영역</a></li>
-              <li><a href="#section5" onclick="closeTopNav()">사업실적</a></li>
-              <li><a href="#section6" onclick="closeTopNav()">FAQ</a></li>
-              <li><a href="#section7" onclick="closeTopNav()">영상강의</a></li>
-              <li><a href="#section8" onclick="closeTopNav()">찾아오시는길</a></li>
-            </ul>
-          </nav>
-                  <script type="text/javascript">
-                    const body = document.querySelector('body')
-                    const topNav = document.querySelector('#myTopnav');
-          
-                    function openTopNav() {
-                      if (topNav.className ==! 'ac') {
-                        topNav.className = 'ac';
-                        body.style.overflow = "hidden";
-                      } else {
-                        topNav.className = ''
-                        body.style.overflow = ''
-                      }
-                    }
-          
-                    function closeTopNav() {
-                      topNav.className = '';
-                      body.style.overflow = ''
-                    }
-                  </script>
-        </div>
-      </div>
-    </header>
-    <div id="main_slider_pc"> 
-      <div class="slider">
-        <div class="slide current">
-          <div class="content">
-            <h1>모두 다 웃을 수 있는 행복을 지어드립니다.</h1>
-            <p>
-            웃음이 넘치는<strong>행복한 가정</strong>으로 만들어 드리겠습니다.
-            </p>
-          </div>
-        </div>
-        <div class="slide">
-          <div class="content">
-            <h1>이름이 아프면 인생이 병듭니다.</h1>
-            <p>
-            몸도 마음도 건강한 이름으로 만들어 드리겠습니다.
-            </p>
-          </div>
-        </div>
-        <div class="slide">
-          <div class="content">
-            <h1>외로움을 새로움으로 디자인해드립니다.</h1>
-            <p>
-                새 이름, 새 사람, 새 인생, 새 출발을 응원합니다.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="buttons">
-        <button id="prev"><i class="fas fa-arrow-left"></i></button>
-        <button id="next"><i class="fas fa-arrow-right"></i></button>
+  <!-- section 1 -->
+  <header class="width-100p navbar">
+    <div class="flexBox just-betw aling-c" id="navBar">
+      <div class="inner">
+        <h1 id="logo">
+          <a href="/">
+            <svg id="Layer1" class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.51 56.69">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: none;
+                    stroke: #fff;
+                    stroke-linecap: round;
+                    stroke-miterlimit: 10;
+                    stroke-width: 9.43px;
+                  }
+
+                  .cls-2 {
+                    fill: #fff;
+                  }
+                </style>
+              </defs>
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="레이어_1" data-name="레이어 1">
+                  <path class="cls-1" d="M35.88,20.05A28.06,28.06,0,0,1,7.71,48" />
+                  <path class="cls-2" d="M20,22.15a10,10,0,1,1-10-10A10,10,0,0,1,20,22.15Z" />
+                  <path class="cls-2" d="M41.77,5.41A5.42,5.42,0,1,1,36.35,0,5.42,5.42,0,0,1,41.77,5.41Z" />
+                  <path class="cls-2"
+                    d="M50.86,26.26c0-6.5,4.77-10.22,9.73-10.22a8.1,8.1,0,0,1,6.27,2.71V11.24h4.56V36.06H66.89V33.51a8,8,0,0,1-6.37,3A9.81,9.81,0,0,1,50.86,26.26Zm16.27-.06a5.85,5.85,0,0,0-5.87-6,5.91,5.91,0,0,0-5.94,6,5.91,5.91,0,1,0,11.81,0Z" />
+                  <path class="cls-2"
+                    d="M73.36,26.26c0-6.5,4.77-10.22,9.73-10.22a8.16,8.16,0,0,1,6.31,2.75V16.44h4.52V36.06H89.4V33.51a8.06,8.06,0,0,1-6.38,3A9.81,9.81,0,0,1,73.36,26.26Zm16.27-.06a5.85,5.85,0,0,0-5.87-6,5.91,5.91,0,0,0-5.94,6,5.91,5.91,0,1,0,11.81,0Z" />
+                  <path class="cls-2"
+                    d="M114.18,36.06h-4.5V33.81a6.74,6.74,0,0,1-5.63,2.65c-4.7,0-7.55-3.05-7.55-8.39V16.44h4.6V27.61c0,3.05,1.34,4.93,4.19,4.93,2.51,0,4.36-1.88,4.36-5.34V16.44h4.53Z" />
+                  <path class="cls-2"
+                    d="M115.45,31.7l4.19-2a5,5,0,0,0,4.73,2.86c2.25,0,3.36-1.08,3.36-2.39s-2.19-1.71-4.6-2.24c-3.35-.71-6.88-1.78-6.88-5.91,0-3.15,3.06-6,7.72-6,4,0,6.5,1.54,8,4.06L128.13,22A4.66,4.66,0,0,0,124,19.76c-2.15,0-3.15,1-3.15,2.11,0,1.31,1.54,1.64,4.49,2.28,3.22.64,6.91,1.78,6.91,5.9,0,2.75-2.45,6.41-8,6.41C119.78,36.46,117,34.78,115.45,31.7Z" />
+                  <path class="cls-2"
+                    d="M133.53,26.3A10.11,10.11,0,0,1,143.72,16a9.8,9.8,0,0,1,10.1,10.09v1.71h-16a5.82,5.82,0,0,0,6,4.63A5.7,5.7,0,0,0,149.32,29L153,31.16a9.8,9.8,0,0,1-9.15,5.3A10,10,0,0,1,133.53,26.3Zm4.56-2.25h11.13c-.67-2.65-2.68-4-5.5-4A5.76,5.76,0,0,0,138.09,24.05Z" />
+                  <path class="cls-2"
+                    d="M155.19,26.26a10.16,10.16,0,1,1,10.16,10.2A10.1,10.1,0,0,1,155.19,26.26Zm15.86,0a5.71,5.71,0,1,0-11.4,0,5.7,5.7,0,1,0,11.4,0Z" />
+                  <path class="cls-2"
+                    d="M50.86,44.3H52.2v1.28A3.29,3.29,0,0,1,55,44.12c2.19,0,3.55,1.43,3.55,3.78v4.73H57.21V48c0-1.61-.8-2.62-2.44-2.62A2.54,2.54,0,0,0,52.22,48v4.61H50.86Z" />
+                  <path class="cls-2"
+                    d="M60,48.47a4.23,4.23,0,0,1,4.25-4.35,3.77,3.77,0,0,1,3.06,1.56V44.3h1.34v8.33H67.28V51.22a3.28,3.28,0,0,1-1.35,1.17,3.91,3.91,0,0,1-1.71.41A4.24,4.24,0,0,1,60,48.47Zm7.41,0a3,3,0,1,0-3,3.09A3,3,0,0,0,67.38,48.46Z" />
+                  <path class="cls-2"
+                    d="M70.46,44.3H71.8v1.16a3,3,0,0,1,2.66-1.34,3,3,0,0,1,3,1.7A3.58,3.58,0,0,1,84,47.72v4.91H82.67V47.7a2.22,2.22,0,0,0-2.36-2.38,2.33,2.33,0,0,0-2.4,2.51v4.8H76.54V47.57a2.1,2.1,0,0,0-2.28-2.25,2.39,2.39,0,0,0-2.45,2.62v4.69H70.46Z" />
+                  <path class="cls-2"
+                    d="M85.45,48.51a4.29,4.29,0,0,1,4.34-4.39,4.11,4.11,0,0,1,4.27,4.24v.57H86.78a3.09,3.09,0,0,0,5.86.89l1.15.62a4.1,4.1,0,0,1-3.93,2.36A4.17,4.17,0,0,1,85.45,48.51Zm1.4-.79h5.83a2.69,2.69,0,0,0-2.89-2.38A3,3,0,0,0,86.85,47.72Z" />
+                  <path class="cls-2"
+                    d="M100.34,48.47a4.29,4.29,0,0,1,4.38-4.35,4.14,4.14,0,0,1,3.9,2.54l-1.21.52a2.85,2.85,0,0,0-2.71-1.8,3.09,3.09,0,0,0,0,6.17,2.87,2.87,0,0,0,2.7-1.9l1.24.55a4.16,4.16,0,0,1-4,2.6A4.29,4.29,0,0,1,100.34,48.47Z" />
+                  <path class="cls-2"
+                    d="M109.66,48.47A4.33,4.33,0,1,1,114,52.8,4.3,4.3,0,0,1,109.66,48.47Zm7.3,0a3,3,0,1,0-3,3.08A3,3,0,0,0,117,48.47Z" />
+                  <path class="cls-2"
+                    d="M119.77,44.3h1.34v1.28a3.28,3.28,0,0,1,2.82-1.46c2.18,0,3.55,1.43,3.55,3.78v4.73h-1.37V48c0-1.61-.8-2.62-2.44-2.62A2.54,2.54,0,0,0,121.12,48v4.61h-1.35Z" />
+                  <path class="cls-2"
+                    d="M128.55,51.08l1.15-.76a2.82,2.82,0,0,0,2.39,1.29c1.24,0,1.86-.65,1.86-1.39s-1.09-1-2.21-1.28c-1.37-.34-2.81-.77-2.81-2.4,0-1.27,1.18-2.43,3.06-2.43a3.92,3.92,0,0,1,3.18,1.38l-1.07.74a2.6,2.6,0,0,0-2.11-1c-1.12,0-1.71.55-1.71,1.24s1,1,2.16,1.28c1.34.34,2.85.72,2.85,2.42,0,1.1-1,2.59-3.24,2.59A4,4,0,0,1,128.55,51.08Z" />
+                  <path class="cls-2"
+                    d="M136.63,49V44.3H138V49c0,1.61.69,2.62,2.29,2.62,1.42,0,2.26-1.09,2.26-2.66V44.3h1.35v8.33h-1.32V51.46a2.78,2.78,0,0,1-2.52,1.34C137.84,52.8,136.63,51.42,136.63,49Z" />
+                  <path class="cls-2" d="M145.66,42.09H147V52.63h-1.37Z" />
+                  <path class="cls-2"
+                    d="M148.28,44.3h1.46V42.71l1.34-.92V44.3H153v1.22h-1.95V49.4c0,1.66.3,2,1.95,2v1.28h-.2c-2.44,0-3.09-.71-3.09-3.22V45.52h-1.46Z" />
+                  <path class="cls-2"
+                    d="M155.15,41.3a1,1,0,1,1-1,1A.92.92,0,0,1,155.15,41.3Zm-.68,3h1.37v8.33h-1.37Z" />
+                  <path class="cls-2"
+                    d="M157.59,44.3h1.34v1.28a3.29,3.29,0,0,1,2.82-1.46c2.18,0,3.55,1.43,3.55,3.78v4.73h-1.37V48c0-1.61-.8-2.62-2.43-2.62A2.55,2.55,0,0,0,158.94,48v4.61h-1.35Z" />
+                  <path class="cls-2"
+                    d="M166.7,48.47a4.23,4.23,0,0,1,4.24-4.35A3.72,3.72,0,0,1,174,45.71V44.3h1.35v8.18a4,4,0,0,1-4.27,4.21A4.25,4.25,0,0,1,167,54.48l1.2-.71a3,3,0,0,0,2.86,1.7A2.75,2.75,0,0,0,174,52.52v-1.3a3.3,3.3,0,0,1-1.36,1.17,3.84,3.84,0,0,1-1.71.41A4.23,4.23,0,0,1,166.7,48.47Zm7.41,0a3,3,0,1,0-3,3.09A3,3,0,0,0,174.11,48.46Z" />
+                </g>
+              </g>
+            </svg>
+          </a>
+        </h1>
+        <button class="hamberger" onclick="openTopNav()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="myTopnav" class="">
+          <ul class="flexBox">
+            <li><a href="#section2" onclick="closeTopNav()">경영철학</a></li>
+            <li><a href="#section3" onclick="closeTopNav()">회사비전</a></li>
+            <li><a href="#contents" onclick="closeTopNav()">사업영역</a></li>
+            <li><a href="#section5" onclick="closeTopNav()">사업실적</a></li>
+            <li><a href="#section6" onclick="closeTopNav()">FAQ</a></li>
+            <li><a href="#section7" onclick="closeTopNav()">영상강의</a></li>
+            <li><a href="#section8" onclick="closeTopNav()">찾아오시는길</a></li>
+          </ul>
+        </nav>
+        <script type="text/javascript">
+          const body = document.querySelector('body')
+          const topNav = document.querySelector('#myTopnav');
+
+          function openTopNav() {
+            if (topNav.className == !'ac') {
+              topNav.className = 'ac';
+              body.style.overflow = "hidden";
+            } else {
+              topNav.className = ''
+              body.style.overflow = ''
+            }
+          }
+
+          function closeTopNav() {
+            topNav.className = '';
+            body.style.overflow = ''
+          }
+        </script>
       </div>
     </div>
-    <div id="main_slider">
-      <div class="swiper mainSwiper" id="co_wit">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="main_img1">
-              <div class="main_text">
-                <h1>모두 다 웃을 수 있는 행복을 지어드립니다.</h1>
-                <p>
+  </header>
+  <div id="main_slider_pc">
+    <div class="slider">
+      <div class="slide current">
+        <div class="content">
+          <h1>모두 다 웃을 수 있는 행복을 지어드립니다.</h1>
+          <p>
+            웃음이 넘치는<strong>행복한 가정</strong>으로 만들어 드리겠습니다.
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>이름이 아프면 인생이 병듭니다.</h1>
+          <p>
+            몸도 마음도 건강한 이름으로 만들어 드리겠습니다.
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>외로움을 새로움으로 디자인해드립니다.</h1>
+          <p>
+            새 이름, 새 사람, 새 인생, 새 출발을 응원합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button id="prev"><i class="fas fa-arrow-left"></i></button>
+      <button id="next"><i class="fas fa-arrow-right"></i></button>
+    </div>
+  </div>
+  <div id="main_slider">
+    <div class="swiper mainSwiper" id="co_wit">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="main_img1">
+            <div class="main_text">
+              <h1>모두 다 웃을 수 있는 행복을 지어드립니다.</h1>
+              <p>
                 웃음이 넘치는 <strong>행복한 가정</strong>으로 만들어 드리겠습니다.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="main_img2">
-              <div class="main_text">
-                <h1>이름이 아프면 <br>인생이 병듭니다.</h1>
-                <p>
-                몸도 마음도 건강한 이름으로 만들어 드리겠습니다.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="main_img3">
-              <div class="main_text">
-                <h1>외로움을 새로움으로 디자인해드립니다.</h1>
-                <p>
-                    새 이름, 새 사람, 새 인생, 새 출발을 응원합니다.
-                </p>
-              </div>
+              </p>
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-slide">
+          <div class="main_img2">
+            <div class="main_text">
+              <h1>이름이 아프면 <br>인생이 병듭니다.</h1>
+              <p>
+                몸도 마음도 건강한 이름으로 만들어 드리겠습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="main_img3">
+            <div class="main_text">
+              <h1>외로움을 새로움으로 디자인해드립니다.</h1>
+              <p>
+                새 이름, 새 사람, 새 인생, 새 출발을 응원합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <script>
+    var swiper = new Swiper(".mainSwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <!-- section 1 ends -->
+  <div id="section2" class="inner1200 section2">
+    <h2 class="textleft"> <span class="section2_text_line"></span>경영철학</h2>
+    <div class="flexBox">
+      <div class="textleft">
+        <h3>다우서(多祐叙) 네임컨설팅은</h3>
+        <p>‘한글원리이름학’을 바탕으로 소리(sound wave)가 우리 삶에 미치는 영향을 과학적으로 분석해서
+          바르고 이로운 소리 이름(sound naming)을 짓는 컨설팅 회사입니다.<br><br>
+          물질 만능, 역기능 시대를 사람 중심, 순기능 시대로 바꾸는 데 이바지하고자&nbsp;합니다.<br><br>
+          ‘행복한 개인’, ‘건강한 가정’을 목표로 서로 화합하고 조화를 이루는 한글소리이름을 짓는데 최선을 다하겠습니다.<br><br>
+          초심(初心) 잃지 않고, 중심(中心) 잘 잡고, 진심(眞心)을 다해 생명을 소중히 여기겠습니다.<br><br>
+          세상에 맑고 밝은 소리 이름을 전하는데 정진하겠습니다.
+        </p>
+      </div>
+      <div class="">
+        <img class="se2_img_pc" src="/images/secTwo.png" alt="다우서&nbsp;네임컨설팅&nbsp;전구이미지">
+        <img class="se2_img_mo" src="/images/secTwo_mo@2x.jpg" alt="다우서&nbsp;네임컨설팅&nbsp;전구이미지">
+      </div>
+    </div>
+  </div>
+  <!-- section 2 ends -->
+  <div id="section3" class="section3">
+    <div class="secCover">
+      <div class="inner1720">
+        <div class="redbox">
+          <div class="flexBox aling-c">
+            <div>
+              <h3><strong>다우서 네임컨설팅</strong> 비전</h3>
+            </div>
+            <div style="width:350px;">
+              <span class="section3_text_line"></span>
+            </div>
+          </div>
+          <p>Your lifelong happiness partner.</p>
+          <p>당신의 평생 행복파트너</p>
+        </div>
+      </div>
+      <div class="whitebox">
+        <div class="flexBox">
+          <div class="boxOne">
+            <h4>다(多)</h4>
+            <p>다 함께 성장하며,<br>사람을 아름답게 여기자.</p>
+          </div>
+          <div class="boxTwo">
+            <h4>우(禑)</h4>
+            <p>우리 모두 축복의 통로가 되어<br>행복한 가정을 만들자.</p>
+          </div>
+          <div class="boxThree">
+            <h4>서(諝)</h4>
+            <p>서로의 마음을 헤아리는<br>총명한 사람이 되자.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="section3_mo">
+    <div style="padding: 25px 15px;">
+      <div class="redbox_mo">
+        <div class="flexBox_mo">
+          <div class="title">
+            <h3><strong>다우서 네임컨설팅</strong> 비전</h3>
+          </div>
+          <p class="section3_text_line"></p>
+        </div>
+        <div class="title2">
+          <p>Your lifelong happiness partner.</p>
+          <span>당신의 평생 행복파트너</span>
+        </div>
+      </div>
+    </div>
+    <div style="padding-bottom:50px;">
+      <div class="whitebox_mo">
+        <ul>
+          <li>
+            <h4>다(多)</h4>
+            <p>다 함께 성장하며,사람을 아름답게 여기자.</p>
+          </li>
+          <li>
+            <h4>우(禑)</h4>
+            <p>우리 모두 축복의 통로가 되어행복한 가정을 만들자.</p>
+          </li>
+          <li>
+            <h4>서(諝)</h4>
+            <p>서로의 마음을 헤아리는 총명한 사람이 되자.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- section 3 ends -->
+  <div id="contents" class="mainpage">
+    <div class="main_visual main_visual_prd">
+      <script src='/js/jquery-ui.min.js'></script>
+      <div class="mainviewcont main_visual_fixed">
+        <div class="titleFour">
+          <h2>Business Area</h2>
+          <p>다우서 네임컨설팅의 사업영역입니다.</p>
+        </div>
+        <div class="visual_view">
+          <span class="viewbg_wrap" style="background-image:url(/images/basic.png)">
+            <span class="viewbg" style="background-image:url(/images/namingover.png)"></span>
+          </span>
+          <span class="viewbg_wrap" style="background-image:url(/images/basic.png);">
+            <span class="viewbg" style="background-image:url(/images/brandingover.png)"></span>
+          </span>
+          <span class="viewbg_wrap" style="background-image:url(/images/basic.png)">
+            <span class="viewbg" style="background-image:url(/images/counselover.png)"></span>
+          </span>
+          <span class="viewbg_wrap" style="background-image:url(/images/basic.png)">
+            <span class="viewbg" style="background-image:url(/images/businessAreabg.png)"></span>
+          </span>
+        </div>
+        <div class="visual">
+          <a href="#" target="_self" class="inlink" onclick="set_main_click_cnt('17','Hotels','MAIN_TOP');">
+            <div class="text_wrap">
+              <span class="title">01</span>
+              <span class="desc">네이밍(Naming)</span>
+              <ul class="hidden">
+                <li class="descript">최상의 소리 값으로 장점을 부각하고 단점을 보완해 드립니다.</li>
+                <li>- 개명: 성은 그대로 이름만 바꿈 </li>
+                <li>- 예명,가명,필명,영어이름 : 새로운 이름으로 바꿈</li>
+                <li>- 태명,신생아 이름</li>
+                <li>- 브랜드명,상호명,회사명,법인명</li>
+              </ul>
+            </div>
+          </a>
+          <a href="#" target="_self" class="inlink" onclick="set_main_click_cnt('16','Resorts','MAIN_TOP');">
+            <div class="text_wrap">
+              <span class="title">02</span>
+              <span class="desc">브랜딩(Branding)</span>
+              <ul class="hidden">
+                <li class="descript">개인과 기업이 확실한 차별화를 통해 강점을 극대화 해드립니다.</li>
+                <li>- 로고, CI 추천</li>
+                <li>- 브랜딩 스토리 제작</li>
+                <li>- SNS마케팅 컨설팅</li>
+              </ul>
+            </div>
+          </a>
+          <a href="#" target="_self" class="inlink" onclick="set_main_click_cnt('14','Rewards','MAIN_TOP');">
+            <div class="text_wrap">
+              <span class="title">03</span>
+              <span class="desc">카운셀링(Counselling)</span>
+              <ul class="hidden">
+                <li class="descript">한글이름 심리검사를 통해 ‘성향,성격,의식,무의식’을
+                  정확히 분석해서 인간관계 고민과 갈등을 해결해 드립니다.<br></li>
+                <li>- 부부 커플 성격차이, 대화단절, 의사소통 문제</li>
+                <li>- 연애, 결혼, 이혼, 가족 상담</li>
+                <li>- 우울증, 무기력증, 대인기피증, 공황장애</li>
+                <li>- 청소년 심리상담</li>
+                <li>- 멘탈 코칭</li>
+                <li>- 불면증, 수면장애</li>
+                <li>- 진로,직업,적성 </li>
+              </ul>
+            </div>
+          </a>
+          <a href="#" target="_self" class="inlink" onclick="set_main_click_cnt('15','Event','MAIN_TOP');">
+            <div class="text_wrap">
+              <span class="title">04</span>
+              <span class="desc">비즈니스 컨설팅(Consulting)</span>
+              <ul class="hidden">
+                <li class="descript">창업,사업 성공율을 확실히 높여 드립니다.</li>
+                <li>- 상호명, 브랜딩(스토리) 제작</li>
+                <li>- 사업장 위치 선정</li>
+                <li>- 색깔,인테리어 가이드</li>
+                <li>- 각종 번호 추천(핸드폰,사업장 번호)</li>
+                <li>- 파트너,직원 성향 분석 배치 안내</li>
+                <li>- 업종, 사업 계획 코칭</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+      <script>
+        $(function () {
+          var winW = $(".mainviewcont").outerWidth(),
+            target = $('.main_visual .visual'),
+            target2 = $('.main_visual .visual_view'),
+            textBox = target.find('.text_wrap'),
+            length = 4,
+            idx = 0,
+            css = [],
+            ease = "easeInOutQuint",
+            time = 1000;
+
+          target2.find('.viewbg_wrap').each(function (e) {
+            css.push({
+              'width': 100 / length + '%',
+              'left': e * (100 / length) + '%',
+              'left2': -e * 100 + '%'
+            });
+            $(this).css({
+                'width': css[e].width,
+                'left': css[e].left
+              })
+              .find('.viewbg').css({
+                'width': winW,
+                'left': css[e].left2
+              });
+          });
+          target.find('>a').on("mouseenter", function () {
+            idx = $(this).index();
+            $(this).addClass('on').siblings().addClass('off');
+            $('.main_visual .visual_view .viewbg_wrap').eq(idx).addClass('hover')
+              .stop().animate({
+                'left': '0',
+                'width': '100%'
+              }, time, ease)
+              .find('.viewbg').stop().animate({
+                'left': 0
+              }, time, ease);
+          });
+
+          target.find('>a').on("mouseleave", function () {
+            idx = $(this).index();
+            $(this).removeClass('on').siblings().removeClass('off');
+            $('.main_visual .visual_view .viewbg_wrap').eq(idx).removeClass('hover').stop().css({
+                'width': css[idx].width,
+                'left': css[idx].left
+              })
+              .find('.viewbg').stop().css({
+                'left': css[idx].left2
+              });
+          });
+
+        });
+      </script>
+    </div>
+
+    <!-- sec4 mobile Zone -->
+    <div id="section4_mo">
+      <div class="section4_area">
+        <h3>Buisness Area</h3>
+        <p>다우서 네임컨설팅의 사업영역입니다.</p>
+        <ul>
+          <li class="conList" onclick="sec4Open1()">
+            <p>01</p>
+            네이밍(Naming)
+
+            <ul class="hidden">
+              <li class="descript">최상의 소리 값으로 장점을 부각하고 단점을 보완해 드립니다.</li>
+              <li>- 개명: 성은 그대로 이름만 바꿈 </li>
+              <li>- 예명,가명,필명,영어이름 : 새로운 이름으로 바꿈</li>
+              <li>- 태명,신생아 이름</li>
+              <li>- 브랜드명,상호명,회사명,법인명</li>
+            </ul>
+          </li>
+          <li class="conList" onclick="sec4Open2()">
+            <p>02</p>
+            브랜딩(Branding)
+            <ul class="hidden">
+              <li class="descript">개인과 기업이 확실한 차별화를 통해 강점을 극대화 해드립니다.</li>
+              <li>- 로고, CI 추천</li>
+              <li>- 브랜딩 스토리 제작</li>
+              <li>- SNS마케팅 컨설팅</li>
+            </ul>
+          </li>
+          <li class="conList" onclick="sec4Open3()">
+            <p>03</p>
+            카운셀링(Counselling)
+            <ul class="hidden">
+              <li class="descript">한글이름 심리검사를 통해 ‘성향,성격,의식,무의식’을
+                정확히 분석해서 인간관계 고민과 갈등을 해결해 드립니다.<br></li>
+              <div class="flexBox">
+                <div>
+                  <li>- 부부 커플 성격차이, 대화단절, 의사소통 문제</li>
+                  <li>- 연애, 결혼, 이혼, 가족 상담</li>
+                  <li>- 우울증, 무기력증, 대인기피증, 공황장애</li>
+                </div>
+                <div>
+                  <li>- 청소년 심리상담</li>
+                  <li>- 멘탈 코칭</li>
+                  <li>- 불면증, 수면장애</li>
+                  <li>- 진로,직업,적성 </li>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="conList" onclick="sec4Open4()">
+            <p>04</p>
+            비즈니스 컨설팅(Consulting)
+            <ul class="hidden">
+              <li class="descript">창업,사업 성공율을 확실히 높여 드립니다.</li>
+              <li>- 상호명, 브랜딩(스토리) 제작</li>
+              <li>- 사업장 위치 선정</li>
+              <li>- 색깔,인테리어 가이드</li>
+              <li>- 각종 번호 추천(핸드폰,사업장 번호)</li>
+              <li>- 파트너,직원 성향 분석 배치 안내</li>
+              <li>- 업종, 사업 계획 코칭</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <script type="text/javascript">
+        const wrap = document.querySelector('#section4_mo');
+        const conList = document.querySelectorAll('.conList');
+        
+        function sec4Open1() {
+          wrap.className = 'ac1'
+        }
+        function sec4Open2() {
+          wrap.className = 'ac2'
+        }
+        function sec4Open3() {
+          wrap.className = 'ac3'
+        }
+        function sec4Open4() {
+          wrap.className = 'ac4'
+        }
+
+      </script>
+    </div>
+    <!-- section 4 ends -->
+    <div id="section5" class="section5">
+      <div class="flexBox">
+        <div class="leftFive">
+          <h2>사업실적(Portfolio)</h2>
+          <p>컨셉의 시작과 끝은 브랜드 네이밍이 전부입니다.</p>
+        </div>
+        <div class="rightFive">
+          <div class="grid-item"></div>
+          <div class="grid-item boxBorder">
+            <div class="first first_01">
+              <div class="tbox">
+                <span>브랜딩,컨설팅</span>
+                <h3>오숨 5(Oh!) Su:m</h3>
+              </div>
+              <p>일(1)한 그대여 편히 숨셔라!<br>
+                이(2)대로 편안히 숨셔라!<br>
+                삼(3)라만상을 가슴에 품고 숨셔라!<br>
+                사(4)랑하는 이들과 함께 숨셔라!<br>
+                오(5)늘을 감사하며 숨셔라!<br>
+              </p>
+            </div>
+          </div>
+          <div class="grid-item"></div>
+          <div class="grid-item boxBorder">
+            <div class="first first_02">
+              <div class="tbox">
+                <span>브랜딩,컨설팅</span>
+                <h3>와(臥)숲</h3>
+              </div>
+              <p>사람과 자연이 하나되어 숲에 누워<br>
+                재충전하고 힐링하다.
+              </p>
+            </div>
+          </div>
+          <div class="grid-item boxBorder bgopacity"></div>
+          <div class="grid-item boxBorder">
+            <div class="first first_03">
+              <div class="tbox">
+                <span>브랜딩,컨설팅</span>
+                <h3>씨오텍(C5 Tech)</h3>
+              </div>
+              <p>창의적(Creative)이고 뛰어난<br>
+                능력(Capability)을 마음껏 발휘해<br>
+                고객(Client)을 만족시키는<br>
+                좋은 인재(Colleague)들이 모여드는<br>
+                회사(Company).<br>
+              </p>
+            </div>
+          </div>
+          <div class="grid-item"></div>
+          <div class="grid-item boxBorder">
+            <div class="first first_04">
+              <div class="tbox">
+                <h3>더콤 코리아<br>(The Com Korea)</h3>
+              </div>
+              <p>한국에서 누구나 알고 있는 으뜸가는 바로<br>
+                그 회사 (The Company in Korea)</p>
+            </div>
+          </div>
+          <div class="grid-item"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="section5_mo">
+      <div>
+        <div class="section5_mo_title">
+          <h2>사업실적(Portfolio)</h2>
+          <p>컨셉의 시작과 끝은 브랜드 네이밍이 전부입니다.</p>
+        </div>
+        <div class="swiper mySwiper" id="co_wit">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="section5_mo_slide_bg">
+                <div class="slide_ab">
+                  <p>브랜딩,컨설팅</p>
+                  <h2>오숨 5(Oh!) Su:m</h2>
+                  <ul>
+                    <li>
+                      일(1)한 그대여 편히 숨셔라!
+                    </li>
+                    <li>
+                      이(2)대로 편안히 숨셔라!
+                    </li>
+                    <li>
+                      삼(3)라만상을 가슴에 품고 숨셔라!
+                    </li>
+                    <li>
+                      사(4)랑하는 이들과 함께 숨셔라!
+                    </li>
+                    <li>
+                      오(5)늘을 감사하며 숨셔라!
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="section5_mo_slide_bg">
+                <div class="slide_ab">
+                  <p>브랜딩,컨설팅</p>
+                  <h2>와(臥)숲</h2>
+                  <ul>
+                    <li>
+                      사람과 자연이 하나되어 숲에 누워
+                    </li>
+                    <li>
+                      재충전하고 힐링하다.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="section5_mo_slide_bg">
+                <div class="slide_ab">
+                  <h2>더콤 코리아 <br>(The Com Korea)</h2>
+                  <ul>
+                    <li>
+                      한국에서 누구나 알고 있는 으뜸가는 바로
+                    </li>
+                    <li>
+                      그 회사 (The Company in Korea)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="section5_mo_slide_bg">
+                <div class="slide_ab">
+                  <p>브랜딩,컨설팅</p>
+                  <h2>씨오텍(C5 Tech)</h2>
+                  <ul>
+                    <li>
+                      창의적(Creative)이고 뛰어난
+                    </li>
+                    <li>
+                      능력(Capability)을 마음껏 발휘해
+                    </li>
+                    <li>
+                      고객(Client)을 만족시키는
+                    </li>
+                    <li>
+                      좋은 인재(Colleague)들이 모여드는
+                    </li>
+                    <li>
+                      회사(Company).
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </div>
     <script>
-      var swiper = new Swiper(".mainSwiper", {
+      var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
@@ -160,567 +739,91 @@
         },
       });
     </script>
-      <!-- section 1 ends -->
-      <div id="section2" class="inner1200 section2">
-        <h2 class="textleft"> <span class="section2_text_line"></span>경영철학</h2> 
-          <div class="flexBox">
-            <div class="textleft">
-              <h3>다우서(多祐叙) 네임컨설팅은</h3><br>
-              <p>‘한글원리이름학’을 바탕으로 소리(sound wave)가 우리 삶에 미치는 영향을 과학적으로 분석해서
-                  바르고 이로운 소리 이름(sound naming)을 짓는 컨설팅 회사입니다.<br><br>
-                  물질 만능, 역기능 시대를 사람 중심, 순기능 시대로 바꾸는 데 이바지하고자&nbsp;합니다.<br><br>
-                  ‘행복한 개인’, ‘건강한 가정’을 목표로 서로 화합하고 조화를 이루는 한글소리이름을 짓는데 최선을 다하겠습니다.<br><br>
-                  초심(初心) 잃지 않고, 중심(中心) 잘 잡고, 진심(眞心)을 다해 생명을 소중히 여기겠습니다.<br><br>
-                  세상에 맑고 밝은 소리 이름을 전하는데 정진하겠습니다. 
-              </p>  
-            </div>
-            <div class="">
-              <img class="se2_img_pc" src="/images/secTwo.png" alt="다우서&nbsp;네임컨설팅&nbsp;전구이미지">
-              <img class="se2_img_mo" src="/images/secTwo_mo.png" alt="다우서&nbsp;네임컨설팅&nbsp;전구이미지">
-            </div>
-          </div>
-      </div>
-      <!-- section 2 ends -->
-      <div id="section3" class="section3">
-        <div class="secCover">
-          <div class="redbox inner1720">
-            <div class="flexBox aling-c">
-              <div>
-                <h3><strong>다우서 네임컨설팅</strong> 비전</h3>
-              </div>
-              <div style="width:350px;">
-                <span class="section3_text_line"></span>
-              </div>
-            </div>
-            <p>Your lifelong happiness partner.</p>
-            <p>당신의 평생 행복파트너</p>
-          </div>
-          <div class="whitebox">
-            <div class="flexBox">
-              <div class="boxOne">
-                <h4>다(多)</h4>
-                <p>다 함께 성장하며,<br>사람을 아름답게 여기자.</p>
-              </div>
-              <div class="boxTwo">
-                <h4>우(禑)</h4>
-                <p>우리 모두 축복의 통로가 되어<br>행복한 가정을 만들자.</p>
-              </div>
-              <div class="boxThree">
-                <h4>서(諝)</h4>
-                <p>서로의 마음을 헤아리는<br>총명한 사람이 되자.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div id="section3_mo">
-        <div style="padding: 50px 30px;">
-          <div class="redbox_mo">
-            <div class="flexBox_mo">
-              <div class="title">
-                <h3><strong>다우서 네임컨설팅</strong> 비전</h3>
-              </div>
-              <p class="section3_text_line"></p>
-            </div>
-            <div class="title2">
-              <p>Your lifelong happiness partner.</p>
-              <span>당신의 평생 행복파트너</span>
-            </div>
-          </div>
-        </div>
-        <div style="padding-bottom:50px;">
-          <div class="whitebox_mo">
-            <ul>
-              <li>
-                <h4>다(多)</h4>
-                <p>다 함께 성장하며,사람을 아름답게 여기자.</p>
-              </li>
-              <li>
-                <h4>우(禑)</h4>
-              <p>우리 모두 축복의 통로가 되어행복한 가정을 만들자.</p>
-              </li>
-              <li>
-                <h4>서(諝)</h4>
-              <p>서로의 마음을 헤아리는 총명한 사람이 되자.</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- section 3 ends -->
-      <div id="contents" class="mainpage">
-        <div class="main_visual main_visual_prd">
-          <script src='/js/jquery-ui.min.js'></script>
-          <div class="mainviewcont main_visual_fixed">
-            <div class="titleFour">
-              <h2>Business Area</h2>
-              <p>다우서 네임컨설팅의 사업영역입니다.</p>
-            </div>
-            <div class="visual_view">
-                            <span class="viewbg_wrap" style="background-image:url(/images/basic.png)">
-                  <span class="viewbg" style="background-image:url(/images/namingover.png)"></span>
-                </span>
-                            <span class="viewbg_wrap" style="background-image:url(/images/basic.png);">
-                  <span class="viewbg" style="background-image:url(/images/brandingover.png)"></span>
-                </span>
-                            <span class="viewbg_wrap" style="background-image:url(/images/basic.png)">
-                  <span class="viewbg" style="background-image:url(/images/counselover.png)"></span>
-                </span>
-                            <span class="viewbg_wrap" style="background-image:url(/images/basic.png)">
-                  <span class="viewbg" style="background-image:url(/images/businessAreabg.png)"></span>
-                </span>
-                        </div>
-            <div class="visual">
-                            <a href="#" target="_self" class="inlink" onclick="set_main_click_cnt('17','Hotels','MAIN_TOP');">
-                  <div class="text_wrap">
-                    <span class="title">01</span>
-                    <span class="desc">네이밍(Naming)</span>
-                    <ul class="hidden">
-                      <li class="descript">최상의 소리 값으로 장점을 부각하고 단점을 보완해 드립니다.</li>
-                      <li>- 개명: 성은 그대로 이름만 바꿈 </li>
-                      <li>- 예명,가명,필명,영어이름 : 새로운 이름으로 바꿈</li>
-                      <li>- 태명,신생아 이름</li>
-                      <li>- 브랜드명,상호명,회사명,법인명</li>
-                    </ul>
-                  </div>
-                </a>
-                            <a href="#" target="_self" class="inlink" onclick="set_main_click_cnt('16','Resorts','MAIN_TOP');">
-                  <div class="text_wrap">
-                    <span class="title">02</span>
-                    <span class="desc">브랜딩(Branding)</span>
-                    <ul class="hidden">
-                      <li class="descript">개인과 기업이 확실한 차별화를 통해 강점을 극대화 해드립니다.</li>
-                      <li>- 로고, CI 추천</li>
-                      <li>- 브랜딩 스토리 제작</li>
-                      <li>- SNS마케팅 컨설팅</li>
-                    </ul>
-                  </div>
-                </a>
-                            <a href="#" target="_self" class="inlink" onclick="set_main_click_cnt('14','Rewards','MAIN_TOP');">
-                  <div class="text_wrap">
-                    <span class="title">03</span>
-                    <span class="desc">카운셀링(Counselling)</span>
-                    <ul class="hidden">
-                      <li class="descript">한글이름 심리검사를 통해 ‘성향,성격,의식,무의식’을
-                      정확히 분석해서 인간관계 고민과 갈등을 해결해 드립니다.<br></li>
-                      <li>- 부부 커플 성격차이, 대화단절, 의사소통 문제</li>
-                      <li>- 연애, 결혼, 이혼, 가족 상담</li>
-                      <li>- 우울증, 무기력증, 대인기피증, 공황장애</li>
-                      <li>- 청소년 심리상담</li>
-                      <li>- 멘탈 코칭</li>
-                      <li>- 불면증, 수면장애</li>
-                      <li>- 진로,직업,적성 </li>
-                    </ul>
-                  </div>
-                </a>
-                            <a href="#" target="_self" class="inlink" onclick="set_main_click_cnt('15','Event','MAIN_TOP');">
-                  <div class="text_wrap">
-                    <span class="title">04</span>
-                    <span class="desc">비즈니스 컨설팅(Consulting)</span>
-                    <ul class="hidden">
-                      <li class="descript">창업,사업 성공율을 확실히 높여 드립니다.</li>
-                      <li>- 상호명, 브랜딩(스토리) 제작</li>
-                      <li>- 사업장 위치 선정</li>
-                      <li>- 색깔,인테리어 가이드</li>
-                      <li>- 각종 번호 추천(핸드폰,사업장 번호)</li>
-                      <li>- 파트너,직원 성향 분석 배치 안내</li>
-                      <li>- 업종, 사업 계획 코칭</li>
-                    </ul>
-                  </div>
-                </a>
-                        </div>
-          </div>
-          <script>
-            $(function(){
-            var winW = $(".mainviewcont").outerWidth(),
-              target = $('.main_visual .visual'),
-              target2 = $('.main_visual .visual_view'),
-              textBox = target.find('.text_wrap'),
-              length = 4,
-              idx = 0,
-              css =[],
-              ease = "easeInOutQuint",
-              time = 1000;
-  
-            target2.find('.viewbg_wrap').each(function(e){
-              css.push({'width':100/length + '%','left':e*(100/length) + '%','left2':-e*100 + '%'});
-              $(this).css({'width':css[e].width,'left':css[e].left})
-                .find('.viewbg').css({'width':winW,'left':css[e].left2});
-            });
-            target.find('>a').on("mouseenter",function(){
-              idx = $(this).index();
-              $(this).addClass('on').siblings().addClass('off');
-              $('.main_visual .visual_view .viewbg_wrap').eq(idx).addClass('hover')
-                .stop().animate({'left':'0','width':'100%'},time,ease)
-                .find('.viewbg').stop().animate({'left':0},time,ease);
-            });
-
-            target.find('>a').on("mouseleave",function(){
-              idx = $(this).index();
-              $(this).removeClass('on').siblings().removeClass('off');
-              $('.main_visual .visual_view .viewbg_wrap').eq(idx).removeClass('hover').stop().css({'width':css[idx].width,'left':css[idx].left})
-                .find('.viewbg').stop().css({'left':css[idx].left2});
-            });
-            
-            });
-          </script>
-        </div>
-  
-<!--      <div id="section4" class="section4">
-
-        <div class="jb-table-row">
-          <div class="jb-table-cell">
-            <ul class="wrap1">
-              <li class="num">01</li>
-              <li class="tit">네이밍(Naming)</li>
-              <ul class="hidden">
-                <li class="descript">창업,사업 성공율을 확실히 높여 드립니다.</li>
-                <li>- 상호명, 브랜딩(스토리) 제작</li>
-                <li>- 사업장 위치 선정</li>
-                <li>- 색깔,인테리어 가이드</li>
-                <li>- 각종 번호 추천(핸드폰,사업장 번호)</li>
-                <li>- 파트너,직원 성향 분석 배치 안내</li>
-                <li>- 업종, 사업 계획 코칭</li>
-              </ul>
-            </ul>
-          </div>
-          <div class="jb-table-cell">
-            <ul class="wrap1">
-              <li class="num">02</li>
-              <li class="tit">브랜딩(Branding)</li>
-              <ul class="hidden">
-                <li class="descript">개인과 기업이 확실한 차별화를 통해 강점을 극대화 해드립니다.</li>
-                <li>- 로고, CI 추천</li>
-                <li>- 브랜딩 스토리 제작</li>
-                <li>- SNS마케팅 컨설팅</li>
-              </ul>
-            </ul>
-          </div>
-          <div class="jb-table-cell">
-            <ul class="wrap1">
-              <li class="num">03</li>
-              <li class="tit">카운셀링(Counselling)</li>
-              <ul class="hidden">
-                <li class="descript">한글이름 심리검사를 통해 ‘성향,성격,의식,무의식’을<br>
-                정확히 분석해서 인간관계 고민과 갈등을<br>
-                해결해 드립니다.<br>
-</li>
-                <li>- 부부 커플 성격차이, 대화단절, 의사소통 문제</li>
-                <li>- 연애, 결혼, 이혼, 가족 상담</li>
-                <li>- 우울증, 무기력증, 대인기피증, 공황장애</li>
-                <li>- 청소년 심리상담</li>
-                <li>- 멘탈 코칭</li>
-                <li>- 불면증, 수면장애</li>
-                <li>- 진로,직업,적성 </li>
-              </ul>
-            </ul>
-          </div>
-          <div class="jb-table-cell">
-            <ul class="wrap1">
-              <li class="num">04</li>
-              <li class="tit">비즈니스 컨설팅(Consulting)</li>
-              <ul class="hidden">
-                <li class="descript">창업,사업 성공율을 확실히 높여 드립니다.</li>
-                <li>- 상호명, 브랜딩(스토리) 제작</li>
-                <li>- 사업장 위치 선정</li>
-                <li>- 색깔,인테리어 가이드</li>
-                <li>- 각종 번호 추천(핸드폰,사업장 번호)</li>
-                <li>- 파트너,직원 성향 분석 배치 안내</li>
-                <li>- 업종, 사업 계획 코칭</li>
-              </ul>
-            </ul>
-          </div>
-        </div>
-      </div>   
- -->
-      <!-- sec4 mobile Zone -->
-      <div id="section4_mo">
-        <div class="section4_area">
-          <h3>Buisness Area</h3>
-          <p>다우서 네임컨설팅의 사업영역입니다.</p>
-          <ul>
-            <li>
-              <p>01</p>
-              네이밍(Naming)
-            </li>
-            <li>
-              <p>02</p>
-              브랜딩(Branding)
-            </li>
-            <li>
-              <p>01</p>
-              카운셀링(Counselling)
-            </li>
-            <li>
-              <p>01</p>
-              비즈니스 컨설팅(Consulting)
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- section 4 ends -->
-      <div id="section5" class="section5">
-        <div class="flexBox">
-          <div class="leftFive">
-            <h2>사업실적(Portfolio)</h2>
-            <p>컨셉의 시작과 끝은 브랜드 네이밍이 전부입니다.</p>
-          </div>
-          <div class="rightFive">
-            <div class="grid-item"></div>
-            <div class="grid-item boxBorder">
-              <div class="first first_01">
-                <div class="tbox">
-                  <span>브랜딩,컨설팅</span>
-                  <h3>오숨 5(Oh!) Su:m</h3>
-                </div>
-                <p>일(1)한 그대여 편히 숨셔라!<br>
-                    이(2)대로 편안히 숨셔라!<br> 
-                    삼(3)라만상을 가슴에 품고 숨셔라!<br> 
-                    사(4)랑하는 이들과 함께 숨셔라!<br> 
-                    오(5)늘을 감사하며 숨셔라!<br> 
-                </p>
-              </div>
-            </div>
-            <div class="grid-item"></div>
-            <div class="grid-item boxBorder">
-              <div class="first first_02">
-                <div class="tbox">
-                  <span>브랜딩,컨설팅</span>
-                  <h3>와(臥)숲</h3>
-                </div>
-                  <p>사람과 자연이 하나되어 숲에 누워<br>
-                    재충전하고 힐링하다.
-                  </p>
-              </div>
-            </div>
-            <div class="grid-item boxBorder bgopacity"></div>
-            <div class="grid-item boxBorder">
-              <div class="first first_03">
-                <div class="tbox">
-                  <span>브랜딩,컨설팅</span>
-                  <h3>씨오텍(C5 Tech)</h3>
-                </div>
-                <p>창의적(Creative)이고 뛰어난<br>
-                능력(Capability)을 마음껏 발휘해<br>
-                고객(Client)을 만족시키는<br>
-                좋은 인재(Colleague)들이 모여드는<br>
-                회사(Company).<br>
-                </p>
-              </div>
-            </div>
-            <div class="grid-item"></div>
-            <div class="grid-item boxBorder">
-              <div class="first first_04">
-                <div class="tbox">
-                  <h3>더콤 코리아<br>(The Com Korea)</h3>
-                </div>
-                <p>한국에서 누구나 알고 있는 으뜸가는 바로<br>
-                그 회사 (The Company in Korea)</p>
-              </div>
-            </div>
-            <div class="grid-item"></div>
-          </div>
-        </div>
-      </div>
-
-      <div id="section5_mo">
-        <div>
-          <div class="section5_mo_title">
-            <h2>사업실적(Portfolio)</h2>
-            <p>컨셉의 시작과 끝은 브랜드 네이밍이 전부입니다.</p>
-          </div>
-          <div class="swiper mySwiper" id="co_wit">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="section5_mo_slide_bg">
-                  <div class="slide_ab">
-                    <p>브랜딩,컨설팅</p>
-                    <h2>오숨 5(Oh!) Su:m</h2>
-                    <ul>
-                      <li>
-                        일(1)한 그대여 편히 숨셔라! 
-                      </li>
-                      <li>
-                        이(2)대로 편안히 숨셔라! 
-                      </li>
-                      <li>
-                        삼(3)라만상을 가슴에 품고 숨셔라! 
-                      </li>
-                      <li>
-                        사(4)랑하는 이들과 함께 숨셔라! 
-                      </li>
-                      <li>
-                        오(5)늘을 감사하며 숨셔라! 
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="section5_mo_slide_bg">
-                  <div class="slide_ab">
-                    <p>브랜딩,컨설팅</p>
-                    <h2>와(臥)숲</h2>
-                    <ul>
-                      <li>
-                        사람과 자연이 하나되어 숲에 누워 
-                      </li>
-                      <li>
-                        재충전하고 힐링하다.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="section5_mo_slide_bg">
-                  <div class="slide_ab">
-                    <h2>더콤 코리아 <br>(The Com Korea)</h2>
-                    <ul>
-                      <li>
-                        한국에서 누구나 알고 있는 으뜸가는 바로 
-                      </li>
-                      <li>
-                        그 회사 (The Company in Korea)  
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="swiper-slide">
-                <div class="section5_mo_slide_bg">
-                  <div class="slide_ab">
-                    <p>브랜딩,컨설팅</p>
-                    <h2>씨오텍(C5 Tech)</h2>
-                    <ul>
-                      <li>
-                        창의적(Creative)이고 뛰어난 
-                      </li>
-                      <li>
-                        능력(Capability)을 마음껏 발휘해 
-                      </li>
-                      <li>
-                        고객(Client)을 만족시키는 
-                      </li>
-                      <li>
-                        좋은 인재(Colleague)들이 모여드는 
-                      </li>
-                      <li>
-                        회사(Company).
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </div>
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          spaceBetween: 30,
-          centeredSlides: true,
-          autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-  
-      </script>
     <!-- section5 ends-->
     <div id="section6" class="section6 FAQ">
       <div class="inner1200">
-      <h3><Strong>FAQ</Strong></h3>
-      <div class="accordionWrap">
-      <button class="accordion"><span>Q</span>무슨 근거로 상담을 해주는 곳인가요?</button>
-      <div class="panel">
-        <div class="flexBox">
-          <p><span>A</span></p>
-          <p>한글원리이름학을 근거로 한글이름 소리 코딩값을 분석해서 이름의 건강 정도를 처방해 드리는 곳입니다.</p>
-          </p>
+        <h3><Strong>FAQ</Strong></h3>
+        <div class="accordionWrap">
+          <button class="accordion"><span>Q</span>무슨 근거로 상담을 해주는 곳인가요?</button>
+          <div class="panel">
+            <div class="flexBox">
+              <p><span>A</span></p>
+              <p>한글원리이름학을 근거로 한글이름 소리 코딩값을 분석해서 이름의 건강 정도를 처방해 드리는 곳입니다.</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordionWrap">
+          <button class="accordion"><span>Q</span>어떤 상담받을 수 있나요?</button>
+          <div class="panel">
+            <div class="flexBox">
+              <p><span>A</span></p>
+              <p>개인과 가족의 성향, 성격을 MBTI 보다 더 정확히 파악하실 수 있습니다.<br>
+                인간관계 고민과 갈등도 해결 됩니다.</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordionWrap">
+          <button class="accordion"><span>Q</span>어떻게 상담받을 수 있나요?</button>
+          <div class="panel">
+            <div class="flexBox">
+              <p><span>A</span></p>
+              <p>전화,화상,대면 상담 중 선택해서 예약 신청하시면 됩니다.<br>
+                기본상담은 4인 가족, 30분입니다.(추가시 비용발생)</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordionWrap">
+          <button class="accordion"><span>Q</span>상담후 꼭 개명을 해야하나요?</button>
+          <div class="panel">
+            <div class="flexBox">
+              <p><span>A</span></p>
+              <p>개명을 강요하지 않습니다. 이름에 좋은 에너지를 넣어 드릴 수 있으나,<br>
+                이름을 소중히 여기고 감사하는 마음은 본인만 지을수 있습니다.</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordionWrap">
+          <button class="accordion"><span>Q</span>사주, 점, 타로, MBTI 보다 무엇이 우수한가요?</button>
+          <div class="panel">
+            <div class="flexBox">
+              <p><span>A</span></p>
+              <p>한글이름 소리값 안에 인생 지도가 담겨있습니다.<br>
+                80%이상의 정확도로 분석해 드리고 처방해 드릴 수 있습니다.</p>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-      <div class="accordionWrap">
-      <button class="accordion"><span>Q</span>어떤 상담받을 수 있나요?</button>
-      <div class="panel">
+    <!-- section 6 ends -->
+    <div id="section7" class="section7">
+      <div class="inner1200">
         <div class="flexBox">
-          <p><span>A</span></p>
-          <p>개인과 가족의 성향, 성격을 MBTI 보다 더 정확히 파악하실 수 있습니다.<br>
-            인간관계 고민과 갈등도 해결 됩니다.</p>
-          </p>
-        </div>
-      </div>
-    </div>
-      <div class="accordionWrap">
-      <button class="accordion"><span>Q</span>어떻게 상담받을 수 있나요?</button>
-      <div class="panel">
-        <div class="flexBox">
-          <p><span>A</span></p>
-          <p>전화,화상,대면 상담 중 선택해서 예약 신청하시면 됩니다.<br>
-            기본상담은 4인 가족, 30분입니다.(추가시 비용발생)</p>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="accordionWrap">
-      <button class="accordion"><span>Q</span>상담후 꼭 개명을 해야하나요?</button>
-      <div class="panel">
-        <div class="flexBox">
-          <p><span>A</span></p>
-          <p>개명을 강요하지 않습니다. 이름에 좋은 에너지를 넣어 드릴 수 있으나,<br>
-            이름을 소중히 여기고 감사하는 마음은 본인만 지을수 있습니다.</p>
-          </p>
-        </div>
-      </div>
-    </div>
-      <div class="accordionWrap">
-      <button class="accordion"><span>Q</span>사주, 점, 타로, MBTI 보다 무엇이 우수한가요?</button>
-      <div class="panel">
-        <div class="flexBox">
-          <p><span>A</span></p>
-          <p>한글이름 소리값 안에 인생 지도가 담겨있습니다.<br>
-            80%이상의 정확도로 분석해 드리고 처방해 드릴 수 있습니다.</p>
-          </p>
-        </div>
-      </div>
-    </div>
-      </div>
-      </div>
-      <!-- section 6 ends -->
-      <div id="section7" class="section7">
-        <div class="inner1200">
-          <div class="flexBox">
           <div class="title">
-          <h3><Strong>영상강의</Strong></h3>
-          <p>다우서 네임 컨설팅의 샘플 영상 입니다.</p>
-        </div>
-        <div class="videoWrap">
-          <h4>사라지는 대한민국. 세계 최저 출산율 확실한 해결법</h4>
-          <div class="flexBox">
-          <div class="youtube_bg">
-            <iframe width="876" height="494" src="https://www.youtube.com/embed/FRE6QN6GHqo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3><Strong>영상강의</Strong></h3>
+            <p>다우서 네임 컨설팅의 샘플 영상 입니다.</p>
           </div>
-          <div class="redarea">
-            <div><p>다우서TV</p>
-              <p><img src="/images/tube.png" alt="유튜브아이콘"></p></div>
+          <div class="videoWrap">
+            <h4>사라지는 대한민국. 세계 최저 출산율 확실한 해결법</h4>
+            <div class="flexBox">
+              <div class="youtube_bg">
+                <iframe width="876" height="494" src="https://www.youtube.com/embed/FRE6QN6GHqo?controls=0"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="redarea">
+                <div>
+                  <p>다우서TV</p>
+                  <p><img src="/images/tube.png" alt="유튜브아이콘"></p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
         </div>
       </div>
     </div>
@@ -733,63 +836,69 @@
             <p>인천광역시 연수구 먼우금로<br>243 6층 601-1호</p>
           </div>
           <div class="flexBox aling-c">
-            <a target="_blank" rel="noopener noreferrer" href="https://blog.naver.com/dauseo"><img src="/images/naver.png" alt="네이버블로그">네이버 블로그</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC5fPsYUxjpQMbSmSoAHSDwA"><img src="/images/tubetrans.png" alt="유튜브채널">유튜브 채널</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://blog.naver.com/dauseo"><img
+                src="/images/naver.png" alt="네이버블로그">네이버 블로그</a>
+            <a target="_blank" rel="noopener noreferrer"
+              href="https://www.youtube.com/channel/UC5fPsYUxjpQMbSmSoAHSDwA"><img src="/images/tubetrans.png"
+                alt="유튜브채널">유튜브 채널</a>
           </div>
         </div>
 
         <div class="maP flexBox">
           <div class="redarea">
-            <div><p>카카오맵 보기</p>
+            <div>
+              <p>카카오맵 보기</p>
               <p><img src="/images/location.png" alt="카카오맵 아이콘"></p>
             </div>
           </div>
-          <div id="daumRoughmapContainer1657520046920" class="root_daum_roughmap root_daum_roughmap_landing responsive" style=""></div>
+          <div id="daumRoughmapContainer1657520046920" class="root_daum_roughmap root_daum_roughmap_landing responsive"
+            style=""></div>
         </div>
       </div>
     </div>
-<!-- footer starts -->
-  <footer id="footer">
-    <div class="inner1200">
-      <img src="/images/logoBottom.png" alt="다우서로고">
-      <hr>
-      <div class="flexBox aling-c">
-        <p>대표자 : 김지환</p>
-        <p>문의전화 : 010.2630.8881</p>
-        <p>사업자 등록번호 : 518-04-00663</p>
+    <!-- footer starts -->
+    <footer id="footer">
+      <div class="inner1200">
+        <img src="/images/logoBottom.png" alt="다우서로고">
+        <hr>
+        <div class="flexBox aling-c">
+          <p>대표자 : 김지환</p>
+          <p>문의전화 : 010.2630.8881</p>
+          <p>사업자 등록번호 : 518-04-00663</p>
+        </div>
+        <p>인천광역시 연수구 먼우금로 243 6층 601-1호</p>
+        <p class="copyright">(C) Copyright Dauseo All Rights Reserved.</p>
       </div>
-      <p>인천광역시 연수구 먼우금로 243 6층 601-1호</p>
-      <p class="copyright">(C) Copyright Dauseo All Rights Reserved.</p>
-    </div>
-  </footer>
+    </footer>
 
     <!-- js -->
     <script>
       var acc = document.getElementsByClassName("accordion");
       var i;
-      
+
       for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
+        acc[i].addEventListener("click", function () {
           this.classList.toggle("active");
           var panel = this.nextElementSibling;
           if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
           } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
-          } 
+          }
         });
       }
-      </script>
+    </script>
     <script charset="UTF-8">
       new daum.roughmap.Lander({
-        "timestamp" : "1657520046920",
-        "key" : "2awxa",
-        "mapWidth" : "994",
-        "mapHeight" : "500"
+        "timestamp": "1657520046920",
+        "key": "2awxa",
+        "mapWidth": "994",
+        "mapHeight": "500"
       }).render();
     </script>
-        <script src="/js/slide.js"></script>
-        <script src="/js/scroll.js"></script>
-			</div>
+    <script src="/js/slide.js"></script>
+    <script src="/js/scroll.js"></script>
+  </div>
 </body>
+
 </html>
